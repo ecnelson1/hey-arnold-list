@@ -18,6 +18,6 @@ export default class DetailsContainer extends Component {
 
     render() {
             if (this.state.loading) return <h1>LOADING...</h1>;
-            return <Character id = {this.state.character.id} name = {this.state.character.name} image = {this.state.character.image} />;
+            return <Character aria-label ='character' id = {this.state.character.id} name = {this.state.character.name} image = {this.state.character.image} />;
     }
 }
